@@ -2,7 +2,7 @@
 ---
 
 ### Branchs
-  - Download the repository `git clone https://github.com/henry-ns/fibosensor.git`
+  - Download the repository `git clone https://github.com/henry-ns/cities.git`
   - Do not make a direct modification to the master, create a branch from `dev`, for what to be developed
   - ```git checkout -b type/for-what-to-be-developed```
 
