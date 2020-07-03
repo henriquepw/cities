@@ -35,6 +35,21 @@ module.exports = {
         ignore: ['**/styles.ts'],
       },
     },
+    {
+      resolve: `gatsby-alias-imports`,
+      options: {
+        aliases: {
+          '@assets': 'src/assets/',
+          '@atoms': 'src/components/atoms/',
+          '@molecules': 'src/components/molecules/',
+          '@organisms': 'src/components/organisms/',
+          '@templates': 'src/components/templates/',
+          "@hooks": "./src/hooks/",
+          "@styles": "./src/styles/",
+          "@utils": "./src/utils/",
+        },
+      },
+    },
     // `gatsby-plugin-offline`,
   ],
 };

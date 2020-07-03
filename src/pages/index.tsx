@@ -2,7 +2,7 @@ import React from 'react';
 
 import { PageProps } from 'gatsby';
 
-import SEO from '../components/atoms/SEO';
+import SEO from '@atoms/SEO';
 
 const IndexPage: React.FC<PageProps> = () => (
   <>

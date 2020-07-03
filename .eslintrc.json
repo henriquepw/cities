@@ -33,17 +33,26 @@
     ],
     "rules": {
       "prettier/prettier": "error",
-  
+
+      "no-useless-constructor": "off",
+      "no-unused-expressions": "off",
+
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          "argsIgnorePattern": "_"
+        }
+      ],
       "@typescript-eslint/explicit-function-return-type": [
         "error",
         {
           "allowExpressions": true
         }
       ],
-  
+
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
-  
+
       "react/prop-types": "off",
       "react/jsx-props-no-spreading": "off",
       "react/jsx-filename-extension": [
@@ -52,20 +61,17 @@
           "extensions": [".tsx"]
         }
       ],
-  
-      "no-unused-expressions": "off",
+
       "import/prefer-default-export": "off",
-      "import/no-duplicates": "off",
       "import/extensions": [
         "error",
         "ignorePackages",
         {
           "ts": "never",
-          "tsx": "never",
-          "js": "never"
+          "tsx": "never"
         }
       ],
-  
+
       "import-helpers/order-imports": [
         "warn",
         {
@@ -73,14 +79,16 @@
           "groups": [
             "/^(react|styled-components)/",
             "module",
-            "/^~/components/atoms/",
-            "/^~/components/molecules/",
-            "/^~/components/organisms/",
-            "/^~/components/templates/",
-            "/^~/context/",
+            "/^.*atoms/",
+            "/^.*molecules/",
+            "/^.*organisms/",
+            "/^.*templates/",
+            "/^.*pages/",
+            "/^.*hooks/",
+            "/^.*utils/",
             ["parent", "sibling", "index"],
-            "/^~/(assets|res)/",
-            "/^(~/|./)styles/"
+            "/^.*assets/",
+            "/^.*styles/"
           ],
           "alphabetize": { "order": "asc", "ignoreCase": true }
         }
@@ -88,8 +96,21 @@
     },
     "settings": {
       "import/resolver": {
-        "typescript": {}
+        "typescript": {},
+        "alias": {
+          "map": [
+            ["@assets", "./src/assets/*"],
+
+            ["@atoms", "./src/components/atoms/*"],
+            ["@molecules", "./src/components/molecules/*"],
+            ["@organisms", "./src/components/organisms/*"],
+            ["@templates", "./src/components/templates/*"],
+
+            ["@hooks", "./src/hooks/*"],
+            ["@styles", "./src/styles/*"],
+            ["@utils", "./src/utils/*"]
+          ]
+        }
       }
     }
   }
-  
