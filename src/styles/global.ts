@@ -5,11 +5,12 @@ export default createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: ${({ theme }) => theme.colors.primary.text};
   }
 
   html {
     scroll-behavior: smooth;
-    background: ${({ theme }) => theme.colors.background};
+    background: ${({ theme }) => theme.colors.secondary.background};
   }
 
   html, body {
@@ -35,5 +36,9 @@ export default createGlobalStyle`
 
   li {
     list-style-type: none;
+  }
+
+  #gatsby-focus-wrapper section:nth-child(even) {
+    background: ${({ theme }) => theme.colors.primary.background};
   }
 `;

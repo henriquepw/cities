@@ -3,10 +3,10 @@ const sizes = {
 };
 
 const lightColors = {
-  background: '#E5E5E5',
   primary: {
     text: '#333333',
     active: '#539CE6',
+    background: '#F0F1F2',
     gradient: 'linear-gradient(39.78deg, #07A59E 0%, #539CE6 100%)',
   },
   secondary: {

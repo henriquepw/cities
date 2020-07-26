@@ -6,6 +6,7 @@ import SEO from '@atoms/SEO';
 
 import Footer from '@molecules/Footer';
 
+import Contact from '@organisms/Contact';
 import Home from '@organisms/Home';
 import Mission from '@organisms/Mission';
 
@@ -19,6 +20,7 @@ const IndexPage: React.FC<PageProps> = () => (
     <SEO title="Home" />
     <Home />
     <Mission />
+    <Contact />
     <Footer />
   </AppProvider>
 );
