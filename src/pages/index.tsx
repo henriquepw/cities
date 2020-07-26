@@ -5,6 +5,7 @@ import { PageProps } from 'gatsby';
 import SEO from '@atoms/SEO';
 
 import Home from '@organisms/Home';
+import Mission from '@organisms/Mission';
 
 import AppProvider from '@templates/AppProvider';
 
@@ -15,7 +16,7 @@ const IndexPage: React.FC<PageProps> = () => (
     <GlobalStyles />
     <SEO title="Home" />
     <Home />
-    <h1>Hi people</h1>
+    <Mission />
   </AppProvider>
 );
 
