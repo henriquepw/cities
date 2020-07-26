@@ -12,6 +12,7 @@ const lightColors = {
   secondary: {
     text: '#FFFFFF',
     active: '#07A59E',
+    background: '#F6F6F6',
   },
 };
 

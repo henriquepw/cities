@@ -4,6 +4,8 @@ import { PageProps } from 'gatsby';
 
 import SEO from '@atoms/SEO';
 
+import Footer from '@molecules/Footer';
+
 import Home from '@organisms/Home';
 import Mission from '@organisms/Mission';
 
@@ -17,6 +19,7 @@ const IndexPage: React.FC<PageProps> = () => (
     <SEO title="Home" />
     <Home />
     <Mission />
+    <Footer />
   </AppProvider>
 );
 
