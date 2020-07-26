@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Henrique M. Miranda <hey@thehenry.dev>",
   "dependencies": {
+    "babel-plugin-polished": "^1.1.0",
     "babel-plugin-styled-components": "^1.10.7",
     "dotenv": "^8.2.0",
     "gatsby": "^2.23.20",
