@@ -50,6 +50,9 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-styled-components`,
+    'gatsby-plugin-preload-fonts',
+    'gatsby-plugin-polished',
     // `gatsby-plugin-offline`,
   ],
 };
