@@ -1,0 +1,10 @@
+{
+  "timestamp": 1595857228425,
+  "hash": "53260b0eb5ca3cf626e0786300172b67",
+  "assets": {
+    "/": {
+      "/static/raleway-latin-700-77d77f36bed0a452984832f6b5f22e3f.woff2": true,
+      "/static/raleway-latin-400-43c849ea0258ce0d23a480e840881f16.woff2": true
+    }
+  }
+}

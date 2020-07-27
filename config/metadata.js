@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Cities',
-  description: 'description here',
+  title: 'CITIES',
+  description: 'Centro de Inovação e Pesquisa em Tecnologias da Informação e Engenharia de Sistema',
   author: 'Henrique M. Miranda',
-  siteUrl: 'https://example.com',
+  siteUrl: 'https://cities-ifpb.vercel.app/',
 };

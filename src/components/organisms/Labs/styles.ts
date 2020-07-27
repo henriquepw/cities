@@ -28,6 +28,7 @@ export const Laboratory = styled.li`
 
     img {
       width: 522px;
+      border-radius: 4px;
     }
 
     &::before {
@@ -41,7 +42,9 @@ export const Laboratory = styled.li`
       left: 20px;
       top: 20px;
 
+      border-radius: 4px;
       background: ${({ theme }) => theme.colors.primary.gradient};
+      transform: matrix(1, 0, 0, -1, 0, 0);
     }
   }
 
