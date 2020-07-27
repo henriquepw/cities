@@ -10,7 +10,7 @@ export const Container = styled(SectionContainer)`
   align-items: center;
 
   ul {
-    width: 100%;
+    width: 1200%;
     max-width: 1256px;
     padding-bottom: 144px;
   }
@@ -21,6 +21,12 @@ export const Container = styled(SectionContainer)`
 
   li + li {
     margin-top: 144px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.sizes.tablet}px) {
+    li + li {
+      margin-top: 104px;
+    }
   }
 `;
 
@@ -34,7 +40,8 @@ export const Laboratory = styled.li`
     margin: 0 20px 20px 0;
 
     img {
-      width: 522px;
+      width: 100%;
+      max-width: 522px;
       border-radius: 4px;
     }
 
@@ -112,6 +119,21 @@ export const Laboratory = styled.li`
     div:nth-of-type(2) {
       margin-left: 0px;
       margin-right: 56px;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.sizes.tablet}px) {
+    &,
+    &:nth-child(even) {
+      flex-direction: column;
+
+      h2 {
+        margin-top: 40px;
+      }
+
+      div:nth-of-type(2) {
+        margin: 0px;
+      }
     }
   }
 `;
