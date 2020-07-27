@@ -11,8 +11,8 @@ export const Container = styled(SectionContainer)`
 
   padding: 240px 32px;
 
-  div {
-    margin-left: 64px;
+  img {
+    margin-right: 64px;
   }
 
   h1 {
@@ -30,5 +30,11 @@ export const Container = styled(SectionContainer)`
     letter-spacing: 0.2em;
     max-width: 572.6px;
     line-height: 175%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.sizes.tablet}px) {
+    img {
+      display: none;
+    }
   }
 `;
