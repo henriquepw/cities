@@ -4,9 +4,13 @@ import missionImg from '@assets/svgs/mission.svg';
 
 import { Container } from './styles';
 
-const Mission: React.FC = () => {
+interface MissionProps {
+  id: string;
+}
+
+const Mission: React.FC<MissionProps> = ({ id }) => {
   return (
-    <Container>
+    <Container id={id}>
       <img src={missionImg} alt="mission" />
       <div>
         <h1>Nossa missão</h1>

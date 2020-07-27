@@ -2,18 +2,18 @@ import React from 'react';
 
 import { Container, Background } from './styles';
 
-const Home: React.FC = () => {
+interface HomeProps {
+  id: string;
+}
+
+const Home: React.FC<HomeProps> = ({ id }) => {
   return (
-    <Container>
+    <Container id={id}>
       <Background
         params={{
           particles: {
-            number: {
-              value: 120,
-            },
-            size: {
-              value: 2,
-            },
+            number: { value: 150 },
+            size: { value: 3 },
           },
         }}
       />

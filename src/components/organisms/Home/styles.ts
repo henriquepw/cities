@@ -29,6 +29,7 @@ export const Container = styled.section`
 
 export const Background = styled(Particles)`
   position: absolute;
+  pointer-events: none;
 
   height: 100%;
   width: 100%;

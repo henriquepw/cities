@@ -16,13 +16,13 @@ const containerStyle = {
   height: '498px',
 };
 
-const Contact: React.FC = () => {
-  React.useEffect(() => {
-    console.log('GOOGLE MAPS API KEY', process.env.GATSBY_GOOGLE_MAPS_API_KEY);
-  }, []);
+interface ContactProps {
+  id: string;
+}
 
+const Contact: React.FC<ContactProps> = ({ id }) => {
   return (
-    <Container>
+    <Container id={id}>
       <SectionTitle>Contato</SectionTitle>
 
       <Content>

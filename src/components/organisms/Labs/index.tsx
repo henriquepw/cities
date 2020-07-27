@@ -35,9 +35,13 @@ const labs = [
   },
 ];
 
-const Labs: React.FC = () => {
+interface LabsProps {
+  id: string;
+}
+
+const Labs: React.FC<LabsProps> = ({ id }) => {
   return (
-    <Container>
+    <Container id={id}>
       <SectionTitle>Laboratórios</SectionTitle>
       <ul>
         {labs.map((lab) => (
