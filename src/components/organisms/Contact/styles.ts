@@ -2,10 +2,6 @@ import styled from 'styled-components';
 
 import { rem } from 'polished';
 
-import SectionContainer from '@templates/SectionContainer';
-
-export const Container = styled(SectionContainer)``;
-
 export const Content = styled.div`
   display: flex;
   align-items: center;

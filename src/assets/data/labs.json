@@ -1,0 +1,27 @@
+[
+  {
+    "id": "lab_1",
+    "name": "Assert",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et dui aliquam, lacinia orci eget, interdum purus. Sed posuere justo at cursus gravida. Quisque elementum tincidunt erat vitae auctor."
+  },
+  {
+    "id": "lab_2",
+    "name": "GComPi",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et dui aliquam, lacinia orci eget, interdum purus. Sed posuere justo at cursus gravida. Quisque elementum tincidunt erat vitae auctor."
+  },
+  {
+    "id": "lab_3",
+    "name": "Robótica",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et dui aliquam, lacinia orci eget, interdum purus. Sed posuere justo at cursus gravida. Quisque elementum tincidunt erat vitae auctor."
+  },
+  {
+    "id": "lab_4",
+    "name": "Latin",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et dui aliquam, lacinia orci eget, interdum purus. Sed posuere justo at cursus gravida. Quisque elementum tincidunt erat vitae auctor."
+  },
+  {
+    "id": "lab_5",
+    "name": "Latomia",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et dui aliquam, lacinia orci eget, interdum purus. Sed posuere justo at cursus gravida. Quisque elementum tincidunt erat vitae auctor."
+  }
+]

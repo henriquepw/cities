@@ -4,12 +4,11 @@ import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
 import SectionTitle from '@atoms/SectionTitle';
 
-import { Container, Content, MapContainer, Card } from './styles';
+import Container from '@templates/SectionContainer';
 
-const center = {
-  lat: -7.2400372,
-  lng: -35.9176976,
-};
+import contactData from '@assets/data/contact.json';
+
+import { Content, MapContainer, Card } from './styles';
 
 const containerStyle = {
   width: '546px',
@@ -26,7 +25,7 @@ const Contact: React.FC = () => {
           <LoadScript googleMapsApiKey={process.env.GATSBY_GOOGLE_MAPS_API_KEY}>
             <GoogleMap
               mapContainerStyle={containerStyle}
-              center={center}
+              center={contactData.coordinates}
               zoom={16}
             />
           </LoadScript>
@@ -34,23 +33,20 @@ const Contact: React.FC = () => {
 
         <Card>
           <h2>Onde nos encontrar</h2>
-          <address>
-            Rua Tranquilino Coelho Lemos, 671 Dinamérica, Campina Grande - PB,
-            58432-300
-          </address>
+          <address>{contactData.address}</address>
 
           <h2>Envie um email para</h2>
           <ul>
-            <li>contato@exemplo.edu.br </li>
-            <li>contato@exemplo.edu.br </li>
-            <li>contato@exemplo.edu.br </li>
+            {contactData.emails.map((email) => (
+              <li key={`@contact-emails-${email}`}>{email}</li>
+            ))}
           </ul>
 
           <h2>Ligue para nós</h2>
           <ul>
-            <li>(83) xxxxx-xxxx</li>
-            <li>(83) xxxxx-xxxx</li>
-            <li>(83) xxxxx-xxxx</li>
+            {contactData.numbers.map((num) => (
+              <li key={`@contact-numbers-${num}`}>{num}</li>
+            ))}
           </ul>
         </Card>
       </Content>

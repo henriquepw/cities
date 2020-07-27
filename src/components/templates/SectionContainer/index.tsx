@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, Content } from './styles';
 
 interface SectionProps {
   id: string;
@@ -15,7 +15,7 @@ const SectionContainer: React.FC<SectionProps> = ({
 }) => {
   return (
     <Container id={id} {...rest}>
-      <div className={className}>{children}</div>
+      <Content className={className}>{children}</Content>
     </Container>
   );
 };

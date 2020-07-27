@@ -1,0 +1,13 @@
+{
+  "coordinates": {
+    "lat": -7.2400372,
+    "lng": -35.9176976
+  },
+  "address": "Rua Tranquilino Coelho Lemos, 671 Dinamérica, Campina Grande - PB, 58432-30",
+  "emails": [
+    "contato@exemplo.edu.br",
+    "contato1@exemplo.edu.br",
+    "contato2@exemplo.edu.br"
+  ],
+  "numbers": ["(83) 1xxxx-xxxx", "(83) 2xxxx-xxxx", "(83) 3xxxx-xxxx"]
+}

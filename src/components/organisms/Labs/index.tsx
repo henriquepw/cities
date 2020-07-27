@@ -2,45 +2,16 @@ import React from 'react';
 
 import SectionTitle from '@atoms/SectionTitle';
 
+import labsData from '@assets/data/labs.json';
+
 import { Container, Laboratory } from './styles';
-
-const description =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et dui aliquam, lacinia orci eget, interdum purus. Sed posuere justo at cursus gravida. Quisque elementum tincidunt erat vitae auctor.';
-
-const labs = [
-  {
-    id: 'lab_1',
-    name: 'Assert',
-    description,
-  },
-  {
-    id: 'lab_2',
-    name: 'GComPi',
-    description,
-  },
-  {
-    id: 'lab_3',
-    name: 'Robótica',
-    description,
-  },
-  {
-    id: 'lab_4',
-    name: 'Latin',
-    description,
-  },
-  {
-    id: 'lab_5',
-    name: 'Latomia',
-    description,
-  },
-];
 
 const Labs: React.FC = () => {
   return (
     <Container id="laboratórios">
       <SectionTitle>Laboratórios</SectionTitle>
       <ul>
-        {labs.map((lab) => (
+        {labsData.map((lab) => (
           <Laboratory key={lab.id}>
             <div>
               <img
