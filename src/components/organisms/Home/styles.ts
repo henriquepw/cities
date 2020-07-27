@@ -1,3 +1,4 @@
+import Particles from 'react-particles-js';
 import styled from 'styled-components';
 
 import { rem } from 'polished';
@@ -6,6 +7,7 @@ export const Container = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   width: 100%;
   min-height: 100vh;
@@ -23,4 +25,11 @@ export const Container = styled.section`
 
     color: ${({ theme }) => theme.colors.secondary.text};
   }
+`;
+
+export const Background = styled(Particles)`
+  position: absolute;
+
+  height: 100%;
+  width: 100%;
 `;
