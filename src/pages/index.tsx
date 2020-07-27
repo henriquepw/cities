@@ -22,8 +22,8 @@ const IndexPage: React.FC<PageProps> = () => (
     <SEO title="Home" />
     <Header />
     <Home id="home" />
-    <Mission id="missão" />
-    <Labs id="laboratórios" />
+    <Mission />
+    <Labs />
     <Contact id="contato" />
     <Footer />
   </AppProvider>

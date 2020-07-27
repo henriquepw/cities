@@ -2,16 +2,18 @@ import styled from 'styled-components';
 
 import { rem } from 'polished';
 
-export const Container = styled.section`
-  padding: 64px 0;
-`;
+import SectionContainer from '@templates/SectionContainer';
+
+export const Container = styled(SectionContainer)``;
 
 export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
 
-  padding: 104px 64px;
+  padding: 104px 0;
+  max-width: 1320px;
+  margin: 0 auto;
 `;
 
 export const MapContainer = styled.div`

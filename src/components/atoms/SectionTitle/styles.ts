@@ -13,7 +13,7 @@ export const Container = styled.h1`
   letter-spacing: 0.15em;
 
   padding: 24px;
-  margin-bottom: 64px;
+  margin: 40px 0 64px;
 
   ::after {
     content: '';

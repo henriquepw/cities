@@ -2,25 +2,32 @@ import styled from 'styled-components';
 
 import { rem } from 'polished';
 
-export const Container = styled.section`
+import SectionContainer from '@templates/SectionContainer';
+
+export const Container = styled(SectionContainer)`
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  padding-bottom: 104px;
-
   ul {
-    max-width: 1135px;
+    width: 100%;
+    max-width: 1256px;
+    padding-bottom: 144px;
+  }
+
+  li {
+    margin-top: 64px;
   }
 
   li + li {
-    margin-top: 150px;
+    margin-top: 144px;
   }
 `;
 
 export const Laboratory = styled.li`
   display: flex;
   align-items: center;
+  justify-content: space-around;
 
   div:first-of-type {
     position: relative;

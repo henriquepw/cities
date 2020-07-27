@@ -6,6 +6,7 @@ export const Container = styled.footer`
   display: flex;
   flex-direction: column;
 
+  width: 100%;
   color: ${({ theme }) => theme.colors.secondary.text};
 
   background: ${({ theme }) => theme.colors.primary.active};

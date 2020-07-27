@@ -16,13 +16,9 @@ const containerStyle = {
   height: '498px',
 };
 
-interface ContactProps {
-  id: string;
-}
-
-const Contact: React.FC<ContactProps> = ({ id }) => {
+const Contact: React.FC = () => {
   return (
-    <Container id={id}>
+    <Container id="contato">
       <SectionTitle>Contato</SectionTitle>
 
       <Content>

@@ -2,12 +2,14 @@ import styled from 'styled-components';
 
 import { rem } from 'polished';
 
-export const Container = styled.section`
+import SectionContainer from '@templates/SectionContainer';
+
+export const Container = styled(SectionContainer)`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 
-  padding: 240px 0;
+  padding: 240px 32px;
 
   div {
     margin-left: 64px;
