@@ -5,6 +5,11 @@ export default createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    &::selection {
+      background-color: ${({ theme }) => theme.colors.secondary.active};
+      color: ${({ theme }) => theme.colors.secondary.text};;
+    }
   }
 
   html {
@@ -39,7 +44,13 @@ export default createGlobalStyle`
     list-style-type: none;
   }
 
-  #gatsby-focus-wrapper section:nth-child(even) {
+  #gatsby-focus-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #gatsby-focus-wrapper section:nth-child(odd) {
     background: ${({ theme }) => theme.colors.primary.background};
   }
 `;
