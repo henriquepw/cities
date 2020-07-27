@@ -8,6 +8,7 @@ import Footer from '@molecules/Footer';
 
 import Contact from '@organisms/Contact';
 import Home from '@organisms/Home';
+import Labs from '@organisms/Labs';
 import Mission from '@organisms/Mission';
 
 import AppProvider from '@templates/AppProvider';
@@ -20,6 +21,7 @@ const IndexPage: React.FC<PageProps> = () => (
     <SEO title="Home" />
     <Home />
     <Mission />
+    <Labs />
     <Contact />
     <Footer />
   </AppProvider>

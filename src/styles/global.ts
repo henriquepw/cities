@@ -5,7 +5,6 @@ export default createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: ${({ theme }) => theme.colors.primary.text};
   }
 
   html {
@@ -17,6 +16,8 @@ export default createGlobalStyle`
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+
+    color: ${({ theme }) => theme.colors.primary.text};
   }
 
   body, button {
