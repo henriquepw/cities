@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 import { rem } from 'polished';
 
+import MoleculeMap from '@molecules/Map';
+
 export const Content = styled.div`
   display: flex;
   align-items: center;
@@ -10,10 +12,24 @@ export const Content = styled.div`
   padding: 104px 0;
   max-width: 1320px;
   margin: 0 auto;
+
+  @media (max-width: ${({ theme }) => theme.sizes.bigTablet}px) {
+    flex-direction: column-reverse;
+  }
 `;
 
-export const MapContainer = styled.div`
+export const Map = styled(MoleculeMap)`
+  width: 100%;
+  max-width: 546px;
+
+  height: 498px;
+
   border: 8px solid ${({ theme }) => theme.colors.secondary.active};
+
+  @media (max-width: ${({ theme }) => theme.sizes.bigTablet}px) {
+    margin-top: 48px;
+    max-width: 450px;
+  }
 `;
 
 export const Card = styled.div`

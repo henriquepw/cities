@@ -1,19 +1,12 @@
 import React from 'react';
 
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
-
 import SectionTitle from '@atoms/SectionTitle';
 
 import Container from '@templates/SectionContainer';
 
 import contactData from '@assets/data/contact.json';
 
-import { Content, MapContainer, Card } from './styles';
-
-const containerStyle = {
-  width: '546px',
-  height: '498px',
-};
+import { Content, Map, Card } from './styles';
 
 const Contact: React.FC = () => {
   return (
@@ -21,15 +14,7 @@ const Contact: React.FC = () => {
       <SectionTitle>Contato</SectionTitle>
 
       <Content>
-        <MapContainer>
-          <LoadScript googleMapsApiKey={process.env.GATSBY_GOOGLE_MAPS_API_KEY}>
-            <GoogleMap
-              mapContainerStyle={containerStyle}
-              center={contactData.coordinates}
-              zoom={16}
-            />
-          </LoadScript>
-        </MapContainer>
+        <Map center={contactData.coordinates} zoom={16} />
 
         <Card>
           <h2>Onde nos encontrar</h2>
