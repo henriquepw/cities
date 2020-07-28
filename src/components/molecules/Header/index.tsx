@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { Container } from './styles';
+import { Container, NavBar } from './styles';
 
 const navItems = [
   {
@@ -22,19 +22,37 @@ const navItems = [
 ];
 
 const Header: React.FC = () => {
+  const [isOpened, setOpened] = useState(false);
+
+  function toggleOpened(): void {
+    setOpened((state) => !state);
+  }
+
+  function setClosed(): void {
+    isOpened && setOpened(false);
+  }
+
   return (
     <Container>
       <span>CITIES</span>
 
-      <nav>
+      <NavBar isOpened={isOpened}>
+        <button type="button" onClick={toggleOpened}>
+          <span />
+          <span />
+          <span />
+        </button>
+
         <ul>
           {navItems.map((item) => (
             <li key={`@navitems-${item.name}`}>
-              <a href={item.href}>{item.name}</a>
+              <a href={item.href} onClick={setClosed}>
+                {item.name}
+              </a>
             </li>
           ))}
         </ul>
-      </nav>
+      </NavBar>
     </Container>
   );
 };

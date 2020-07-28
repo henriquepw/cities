@@ -1,6 +1,10 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { rem } from 'polished';
+
+interface NavProps {
+  isOpened: boolean;
+}
 
 export const Container = styled.header`
   display: flex;
@@ -24,6 +28,42 @@ export const Container = styled.header`
 
     line-height: 1.16em;
     letter-spacing: 0.35em;
+  }
+
+  @media (max-width: ${({ theme }) => theme.sizes.bigTablet}px) {
+    margin-top: 32px;
+
+    span {
+      font-size: ${rem('24px')};
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.sizes.tablet}px) {
+    margin-top: 32px;
+
+    span {
+      font-size: ${rem('18px')};
+    }
+  }
+`;
+
+export const NavBar = styled.nav<NavProps>`
+  button {
+    display: none;
+    width: 32px;
+
+    span {
+      display: block;
+
+      height: 2px;
+      width: 100%;
+
+      background: ${({ theme }) => theme.colors.secondary.text};
+    }
+
+    span + span {
+      margin-top: 6px;
+    }
   }
 
   ul {
@@ -57,11 +97,62 @@ export const Container = styled.header`
     }
   }
 
-  @media (max-width: ${({ theme }) => theme.sizes.tablet}px) {
-    margin-top: 32px;
+  @media (max-width: ${({ theme }) => theme.sizes.bigTablet}px) {
+    button {
+      display: block;
+      cursor: pointer;
+      position: fixed;
 
-    span {
-      font-size: ${rem('18px')};
+      top: 32px;
+      right: 32px;
+
+      z-index: 10;
+      padding: 4px;
     }
+
+    ul {
+      flex-direction: column;
+      justify-content: center;
+      position: fixed;
+
+      opacity: 0;
+      pointer-events: none;
+
+      width: 100%;
+      height: 100%;
+
+      top: 0;
+      left: 0;
+
+      background: ${({ theme }) => theme.colors.secondary.text};
+
+      a {
+        color: ${({ theme }) => theme.colors.secondary.active};
+      }
+
+      li {
+        font-size: ${rem('20px')};
+      }
+
+      li + li {
+        margin-left: 0;
+        margin-top: 40px;
+      }
+    }
+
+    ${({ isOpened }) =>
+      isOpened &&
+      css`
+        button {
+          span {
+            background: ${({ theme }) => theme.colors.secondary.active};
+          }
+        }
+
+        ul {
+          opacity: 1;
+          pointer-events: all;
+        }
+      `}
   }
 `;
