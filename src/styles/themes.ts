@@ -2,6 +2,7 @@ const sizes = {
   maxWidth: 1440,
   bigTablet: 1200,
   tablet: 990,
+  phone: 600,
 };
 
 const lightColors = {

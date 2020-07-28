@@ -2,7 +2,24 @@ import React from 'react';
 
 import { Container } from './styles';
 
-const navItems = ['Home', 'Missão', 'Laboratórios', 'Contato'];
+const navItems = [
+  {
+    name: 'Home',
+    href: '#home',
+  },
+  {
+    name: 'Missão',
+    href: '#missao',
+  },
+  {
+    name: 'Laboratórios',
+    href: '#laboratorios',
+  },
+  {
+    name: 'Contato',
+    href: '#contato',
+  },
+];
 
 const Header: React.FC = () => {
   return (
@@ -12,8 +29,8 @@ const Header: React.FC = () => {
       <nav>
         <ul>
           {navItems.map((item) => (
-            <li key={`@navitems-${item}`}>
-              <a href={`#${item.toLowerCase()}`}>{item}</a>
+            <li key={`@navitems-${item.name}`}>
+              <a href={item.href}>{item.name}</a>
             </li>
           ))}
         </ul>

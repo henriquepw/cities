@@ -6,7 +6,7 @@ import { Container } from './styles';
 
 const Mission: React.FC = () => {
   return (
-    <Container id="missão">
+    <Container id="missao">
       <img src={missionImg} alt="mission" />
       <div>
         <h1>Nossa missão</h1>

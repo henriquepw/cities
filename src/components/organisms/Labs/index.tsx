@@ -8,7 +8,7 @@ import { Container, Laboratory } from './styles';
 
 const Labs: React.FC = () => {
   return (
-    <Container id="laboratórios">
+    <Container id="laboratorios">
       <SectionTitle>Laboratórios</SectionTitle>
       <ul>
         {labsData.map((lab) => (
@@ -16,7 +16,7 @@ const Labs: React.FC = () => {
             <div>
               <img
                 src="https://cdn.mynewlab.com/wp-content/uploads/2018/04/iStock-928891398.jpg.webp"
-                alt="test"
+                alt={lab.name}
               />
             </div>
 

@@ -29,6 +29,14 @@ export const Container = styled.footer`
       font-size: ${rem('16px')};
       letter-spacing: 0.15em;
       white-space: nowrap;
+
+      a {
+        font-weight: normal;
+      }
+    }
+
+    @media (max-width: ${({ theme }) => theme.sizes.phone}px) {
+      grid-column-gap: 32px;
     }
   }
 
@@ -36,7 +44,34 @@ export const Container = styled.footer`
     text-align: center;
     font-size: ${rem('14px')};
     letter-spacing: 0.3em;
-    margin-bottom: 32px;
+    margin: 0 32px 32px;
+  }
+
+  li a,
+  p a {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+
+      left: 0;
+      bottom: -4px;
+
+      width: 100%;
+      height: 2px;
+
+      opacity: 0;
+      transform: translateY(5px) translateZ(0);
+      transition: opacity 0.3s, transform 0.3s;
+
+      background: ${({ theme }) => theme.colors.secondary.text};
+    }
+
+    &:hover::after {
+      opacity: 1;
+      transform: translateY(0) translateZ(0);
+    }
   }
 
   a {
@@ -55,4 +90,14 @@ export const Containt = styled.div`
   max-width: ${({ theme }) => theme.sizes.maxWidth}px;
   margin: 80px auto;
   padding: 0 10%;
+
+  @media (max-width: ${({ theme }) => theme.sizes.tablet}px) {
+    > a {
+      margin-right: 32px;
+
+      img:nth-of-type(2) {
+        display: none;
+      }
+    }
+  }
 `;

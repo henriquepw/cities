@@ -21,10 +21,20 @@ const Footer: React.FC = () => {
         <ul>
           <h2>Páginas</h2>
 
-          <li>Home</li>
-          <li>Laboratórios</li>
-          <li>Missão</li>
-          <li>Codigo do site</li>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#laboratorios">Laboratórios</a>
+          </li>
+          <li>
+            <a href="#missao">Missão</a>
+          </li>
+          <li>
+            <ExternalLink href="https://github.com/henry-ns/cities">
+              Codigo do site
+            </ExternalLink>
+          </li>
         </ul>
       </Containt>
 

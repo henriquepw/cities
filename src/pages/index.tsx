@@ -21,10 +21,13 @@ const IndexPage: React.FC<PageProps> = () => (
     <GlobalStyles />
     <SEO title="Home" />
     <Header />
+
+    {/* Sections */}
     <Home id="home" />
     <Mission />
     <Labs />
-    <Contact id="contato" />
+    <Contact />
+
     <Footer />
   </AppProvider>
 );

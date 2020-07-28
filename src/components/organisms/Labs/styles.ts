@@ -10,7 +10,7 @@ export const Container = styled(SectionContainer)`
   align-items: center;
 
   ul {
-    width: 1200%;
+    width: 100%;
     max-width: 1256px;
     padding-bottom: 144px;
   }
