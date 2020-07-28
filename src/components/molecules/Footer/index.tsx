@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ExternalLink from '@atoms/ExternalLink';
+import InternalLink from '@atoms/InternalLink';
 
 import ifpbLogo from '@assets/images/ifpb-logo.png';
 import ifpb from '@assets/images/ifpb-logotipo.png';
@@ -22,13 +23,13 @@ const Footer: React.FC = () => {
           <h2>Páginas</h2>
 
           <li>
-            <a href="#home">Home</a>
+            <InternalLink to="home">Home</InternalLink>
           </li>
           <li>
-            <a href="#laboratorios">Laboratórios</a>
+            <InternalLink to="laboratorios">Laboratórios</InternalLink>
           </li>
           <li>
-            <a href="#missao">Missão</a>
+            <InternalLink to="missao">Missão</InternalLink>
           </li>
           <li>
             <ExternalLink href="https://github.com/henry-ns/cities">

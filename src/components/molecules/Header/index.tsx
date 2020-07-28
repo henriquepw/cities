@@ -1,23 +1,25 @@
 import React, { useState } from 'react';
 
+import InternalLink from '@atoms/InternalLink';
+
 import { Container, NavBar } from './styles';
 
 const navItems = [
   {
     name: 'Home',
-    href: '#home',
+    to: 'home',
   },
   {
     name: 'Missão',
-    href: '#missao',
+    to: 'missao',
   },
   {
     name: 'Laboratórios',
-    href: '#laboratorios',
+    to: 'laboratorios',
   },
   {
     name: 'Contato',
-    href: '#contato',
+    to: 'contato',
   },
 ];
 
@@ -46,9 +48,9 @@ const Header: React.FC = () => {
         <ul>
           {navItems.map((item) => (
             <li key={`@navitems-${item.name}`}>
-              <a href={item.href} onClick={setClosed}>
+              <InternalLink to={item.to} onClick={setClosed}>
                 {item.name}
-              </a>
+              </InternalLink>
             </li>
           ))}
         </ul>
