@@ -25,6 +25,14 @@ export const Container = styled.section`
 
     padding: 0 32px;
     color: ${({ theme }) => theme.colors.secondary.text};
+
+    @media (max-width: ${({ theme }) => theme.sizes.tablet}px) {
+      font-size: ${rem('32px')};
+    }
+
+    @media (max-width: ${({ theme }) => theme.sizes.phone}px) {
+      font-size: ${rem('24px')};
+    }
   }
 `;
 

@@ -9,7 +9,9 @@ export const Container = styled(SectionContainer)`
   align-items: center;
   justify-content: space-around;
 
-  padding: 240px 32px;
+  padding: 64px 32px;
+
+  min-height: 90vh;
 
   img {
     margin-right: 64px;

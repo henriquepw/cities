@@ -12,7 +12,7 @@ const Home: React.FC<HomeProps> = ({ id }) => {
       <Background
         params={{
           particles: {
-            number: { value: 150 },
+            number: { value: 100 },
             size: { value: 3 },
           },
         }}

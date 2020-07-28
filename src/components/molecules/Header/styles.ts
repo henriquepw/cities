@@ -56,4 +56,12 @@ export const Container = styled.header`
       }
     }
   }
+
+  @media (max-width: ${({ theme }) => theme.sizes.tablet}px) {
+    margin-top: 32px;
+
+    span {
+      font-size: ${rem('18px')};
+    }
+  }
 `;

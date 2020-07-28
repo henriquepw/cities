@@ -9,7 +9,7 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-around;
 
-  padding: 104px 0;
+  padding: 40px 0 104px;
   max-width: 1320px;
   margin: 0 auto;
 
