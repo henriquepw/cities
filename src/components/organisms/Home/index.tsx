@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { Container, Background } from './styles';
+import InternalLink from '@atoms/InternalLink';
+
+import { Container, Background, ScrollButtom } from './styles';
 
 interface HomeProps {
   id: string;
@@ -21,6 +23,9 @@ const Home: React.FC<HomeProps> = ({ id }) => {
         Centro de Inovação e Pesquisa em Tecnologias da Informação e Engenharia
         de Sistema
       </h1>
+      <InternalLink to="missao">
+        <ScrollButtom />
+      </InternalLink>
     </Container>
   );
 };

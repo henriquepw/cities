@@ -1,5 +1,5 @@
 import Particles from 'react-particles-js';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 import { rem } from 'polished';
 
@@ -34,6 +34,11 @@ export const Container = styled.section`
       font-size: ${rem('24px')};
     }
   }
+
+  a {
+    position: absolute;
+    bottom: 32px;
+  }
 `;
 
 export const Background = styled(Particles)`
@@ -42,4 +47,35 @@ export const Background = styled(Particles)`
 
   height: 100%;
   width: 100%;
+`;
+
+const slipDown = keyframes`
+  to {
+    transform: translate(-50%, 8px) translateZ(0);
+  }
+`;
+
+export const ScrollButtom = styled.div`
+  height: 64px;
+  width: 32px;
+
+  border: 2px solid ${({ theme }) => theme.colors.secondary.text};
+  border-radius: 16px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+
+    top: 12px;
+    left: 50%;
+    transform: translate(-50%, 0) translateZ(0);
+    animation: ${slipDown} 1.5s ease-out infinite alternate;
+
+    height: 9px;
+    width: 3px;
+
+    background: ${({ theme }) => theme.colors.secondary.text};
+    border-radius: 3px;
+  }
 `;

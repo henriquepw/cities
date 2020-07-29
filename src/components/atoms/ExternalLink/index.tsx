@@ -3,17 +3,12 @@ import React from 'react';
 type ExternalLink = HTMLAnchorElement;
 
 const ExternalLink: React.FC<React.AnchorHTMLAttributes<HTMLAnchorElement>> = ({
-  className,
-  children,
   href,
+  children,
+  ...rest
 }) => {
   return (
-    <a
-      className={className}
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <a href={href} target="_blank" rel="noopener noreferrer" {...rest}>
       {children}
     </a>
   );
