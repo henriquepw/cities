@@ -14,8 +14,26 @@ const Home: React.FC<HomeProps> = ({ id }) => {
       <Background
         params={{
           particles: {
-            number: { value: 100 },
+            number: {
+              value: 80,
+              density: {
+                enable: true,
+                value_area: 800,
+              },
+            },
             size: { value: 3 },
+            move: {
+              enable: true,
+              speed: 4,
+            },
+          },
+          interactivity: {
+            events: {
+              onhover: {
+                enable: true,
+                mode: 'repulse',
+              },
+            },
           },
         }}
       />

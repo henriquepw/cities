@@ -34,11 +34,14 @@ const SEO: React.FC<SEOProps> = ({
 
   return (
     <Helmet
-      htmlAttributes={{
-        lang,
-      }}
+      htmlAttributes={{ lang }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      script={[
+        {
+          src: 'https://cdn.rawgit.com/progers/pathseg/master/pathseg.js',
+        },
+      ]}
       meta={[
         {
           name: `description`,

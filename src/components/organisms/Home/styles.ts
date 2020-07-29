@@ -23,6 +23,8 @@ export const Container = styled.section`
     letter-spacing: 0.15em;
     line-height: 150%;
 
+    z-index: 5;
+
     padding: 0 32px;
     color: ${({ theme }) => theme.colors.secondary.text};
 
@@ -43,10 +45,12 @@ export const Container = styled.section`
 
 export const Background = styled(Particles)`
   position: absolute;
-  pointer-events: none;
+  /* pointer-events: none; */
 
   height: 100%;
   width: 100%;
+
+  z-index: 0;
 `;
 
 const slipDown = keyframes`
