@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
           </li>
           <li>
             <ExternalLink href="https://github.com/henry-ns/cities">
-              Codigo do site
+              Código do site
             </ExternalLink>
           </li>
         </ul>

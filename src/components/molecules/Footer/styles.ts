@@ -100,4 +100,8 @@ export const Containt = styled.div`
       }
     }
   }
+
+  @media (max-width: ${({ theme }) => theme.sizes.phone}px) {
+    margin: 48px auto;
+  }
 `;

@@ -41,6 +41,10 @@ export const Container = styled.section`
     position: absolute;
     bottom: 32px;
   }
+
+  @media (max-width: ${({ theme }) => theme.sizes.phone}px) {
+    min-height: 95vh;
+  }
 `;
 
 export const Background = styled(Particles)`
