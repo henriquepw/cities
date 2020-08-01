@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'gatsby';
+
 import SectionTitle from '@atoms/SectionTitle';
 
 import labsData from '@assets/data/labs.json';
@@ -23,6 +25,9 @@ const Labs: React.FC = () => {
             <div>
               <h2>{lab.name}</h2>
               <p>{lab.description}</p>
+              <Link to={`/laboratorios/${lab.name.toLowerCase()}`}>
+                SAIBA MAIS
+              </Link>
             </div>
           </Laboratory>
         ))}

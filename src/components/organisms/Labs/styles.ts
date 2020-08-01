@@ -66,7 +66,7 @@ export const Laboratory = styled.li`
     font-size: ${rem('34px')};
     letter-spacing: 0.15em;
 
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     padding: 0 24px;
     position: relative;
 
@@ -83,7 +83,12 @@ export const Laboratory = styled.li`
 
       border-radius: 2px;
       background: ${({ theme }) => theme.colors.secondary.active};
+      transition: background 0.3s;
     }
+  }
+
+  &:hover h2::before {
+    background: ${({ theme }) => theme.colors.primary.active};
   }
 
   p {
@@ -92,6 +97,32 @@ export const Laboratory = styled.li`
     line-height: 1.5em;
 
     max-width: 540px;
+  }
+
+  a {
+    display: inline-block;
+
+    line-height: 56px;
+    letter-spacing: 0.15em;
+    border-radius: 8px;
+    margin-top: 32px;
+    padding: 0 40px;
+
+    font-weight: bold;
+    color: ${({ theme }) => theme.colors.secondary.text};
+    background: ${({ theme }) => theme.colors.secondary.active};
+
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    transition: background 0.2s, box-shadow 0.3s ease-out;
+
+    &:hover {
+      background: ${({ theme }) => theme.colors.primary.active};
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    }
   }
 
   div:nth-of-type(2) {
