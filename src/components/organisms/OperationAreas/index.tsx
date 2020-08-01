@@ -4,7 +4,16 @@ import SectionTitle from '@atoms/SectionTitle';
 
 import { Container } from './styles';
 
-const OperationArea: React.FC = () => {
+export interface AtuationArea {
+  name: string;
+  description: string;
+}
+
+interface OperationArea {
+  areas: AtuationArea[];
+}
+
+const OperationArea: React.FC<OperationArea> = () => {
   return (
     <Container id="area">
       <SectionTitle>Áreas de atuação</SectionTitle>

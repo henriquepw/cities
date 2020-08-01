@@ -5,9 +5,9 @@ import SEO from '@atoms/SEO';
 import Footer from '@molecules/Footer';
 import Header from '@molecules/Header';
 
-import AboutUs from '@organisms/AboutUs';
+import AboutUs, { AboutUsProps } from '@organisms/AboutUs';
 import Home from '@organisms/Home';
-import OperationArea from '@organisms/OperationArea';
+import OperationAreas, { AtuationArea } from '@organisms/OperationAreas';
 import Professors from '@organisms/Professors';
 
 import AppProvider from '@templates/AppProvider';
@@ -20,6 +20,8 @@ interface LaboratoryProps {
     name: string;
     title: string;
     backgroundImg: string;
+    aboutUs: AboutUsProps;
+    areas: AtuationArea[];
   };
 }
 
@@ -42,8 +44,8 @@ const Laboratory: React.FC<LaboratoryProps> = ({ data }) => {
         title={data.title}
         backgroundImg={data.backgroundImg}
       />
-      <AboutUs />
-      <OperationArea />
+      <AboutUs {...data.aboutUs} />
+      <OperationAreas areas={data.areas} />
       <Professors />
 
       <Footer />
