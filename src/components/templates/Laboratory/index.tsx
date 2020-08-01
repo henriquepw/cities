@@ -2,9 +2,13 @@ import React from 'react';
 
 import SEO from '@atoms/SEO';
 
+import Footer from '@molecules/Footer';
 import Header from '@molecules/Header';
 
+import AboutUs from '@organisms/AboutUs';
 import Home from '@organisms/Home';
+import OperationArea from '@organisms/OperationArea';
+import Professors from '@organisms/Professors';
 
 import AppProvider from '@templates/AppProvider';
 
@@ -31,9 +35,18 @@ const Laboratory: React.FC<LaboratoryProps> = ({ data }) => {
     <AppProvider>
       <GlobalStyles />
       <SEO title={data.name} />
+      <Header navItems={navItems} />
 
-      <Header title={data.name} navItems={navItems} />
-      <Home nextId="2" title={data.title} backgroundImg={data.backgroundImg} />
+      <Home
+        nextId="sobre"
+        title={data.title}
+        backgroundImg={data.backgroundImg}
+      />
+      <AboutUs />
+      <OperationArea />
+      <Professors />
+
+      <Footer />
     </AppProvider>
   );
 };
