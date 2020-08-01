@@ -16,14 +16,23 @@ import AppProvider from '@templates/AppProvider';
 
 import GlobalStyles from '@styles/global';
 
+const navItems = [
+  { name: 'Home', to: 'home' },
+  { name: 'Missão', to: 'missao' },
+  { name: 'Laboratórios', to: 'laboratorios' },
+  { name: 'Contato', to: 'contato' },
+];
+
 const IndexPage: React.FC<PageProps> = () => (
   <AppProvider>
     <GlobalStyles />
     <SEO title="Home" />
-    <Header />
+    <Header navItems={navItems} />
 
-    {/* Sections */}
-    <Home id="home" />
+    <Home
+      title="Centro de Inovação e Pesquisa em Tecnologias da Informação e Engenharia de Sistema"
+      nextId="missao"
+    />
     <Mission />
     <Labs />
     <Contact />
