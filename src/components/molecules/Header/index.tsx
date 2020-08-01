@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import InternalLink from '@atoms/InternalLink';
 
-import { Container, NavBar } from './styles';
+import { Container, NavBar, Title } from './styles';
 
 interface HeaderProps {
   title?: string;
@@ -25,7 +25,7 @@ const Header: React.FC<HeaderProps> = ({ title = 'CITIES', navItems }) => {
 
   return (
     <Container>
-      <span>{title}</span>
+      <Title to="/">{title}</Title>
 
       <NavBar isOpened={isOpened}>
         <button type="button" onClick={toggleOpened}>

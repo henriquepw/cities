@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 
+import { Link } from 'gatsby';
 import { rem } from 'polished';
 
 interface NavProps {
@@ -22,14 +23,6 @@ export const Container = styled.header`
 
   color: ${({ theme }) => theme.colors.secondary.text};
 
-  span {
-    font-size: ${rem('36px')};
-    font-weight: bold;
-
-    line-height: 1.16em;
-    letter-spacing: 0.35em;
-  }
-
   @media (max-width: ${({ theme }) => theme.sizes.bigTablet}px) {
     margin-top: 32px;
 
@@ -45,6 +38,15 @@ export const Container = styled.header`
       font-size: ${rem('18px')};
     }
   }
+`;
+
+export const Title = styled(Link)`
+  color: ${({ theme }) => theme.colors.secondary.text};
+  font-size: ${rem('36px')};
+  font-weight: bold;
+
+  line-height: 1.16em;
+  letter-spacing: 0.35em;
 `;
 
 export const NavBar = styled.nav<NavProps>`
