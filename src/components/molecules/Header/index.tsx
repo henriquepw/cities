@@ -4,26 +4,15 @@ import InternalLink from '@atoms/InternalLink';
 
 import { Container, NavBar } from './styles';
 
-const navItems = [
-  {
-    name: 'Home',
-    to: 'home',
-  },
-  {
-    name: 'Missão',
-    to: 'missao',
-  },
-  {
-    name: 'Laboratórios',
-    to: 'laboratorios',
-  },
-  {
-    name: 'Contato',
-    to: 'contato',
-  },
-];
+interface HeaderProps {
+  title?: string;
+  navItems: Array<{
+    name: string;
+    to: string;
+  }>;
+}
 
-const Header: React.FC = () => {
+const Header: React.FC<HeaderProps> = ({ title = 'CITIES', navItems }) => {
   const [isOpened, setOpened] = useState(false);
 
   function toggleOpened(): void {
@@ -36,7 +25,7 @@ const Header: React.FC = () => {
 
   return (
     <Container>
-      <span>CITIES</span>
+      <span>{title}</span>
 
       <NavBar isOpened={isOpened}>
         <button type="button" onClick={toggleOpened}>
