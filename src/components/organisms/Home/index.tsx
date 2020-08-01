@@ -5,43 +5,45 @@ import InternalLink from '@atoms/InternalLink';
 import { Container, Background, ScrollButtom } from './styles';
 
 interface HomeProps {
-  id: string;
+  title: string;
+  nextId: string;
+  backgroundImg?: string;
 }
 
-const Home: React.FC<HomeProps> = ({ id }) => {
+const Home: React.FC<HomeProps> = ({ title, nextId, backgroundImg }) => {
   return (
-    <Container id={id}>
-      <Background
-        params={{
-          particles: {
-            number: {
-              value: 80,
-              density: {
+    <Container id="home" backgroundImg={backgroundImg}>
+      {!backgroundImg && (
+        <Background
+          params={{
+            particles: {
+              number: {
+                value: 80,
+                density: {
+                  enable: true,
+                  value_area: 800,
+                },
+              },
+              size: { value: 3 },
+              move: {
                 enable: true,
-                value_area: 800,
+                speed: 2,
               },
             },
-            size: { value: 3 },
-            move: {
-              enable: true,
-              speed: 2,
-            },
-          },
-          interactivity: {
-            events: {
-              onhover: {
-                enable: true,
-                mode: 'repulse',
+            interactivity: {
+              events: {
+                onhover: {
+                  enable: true,
+                  mode: 'repulse',
+                },
               },
             },
-          },
-        }}
-      />
-      <h1>
-        Centro de Inovação e Pesquisa em Tecnologias da Informação e Engenharia
-        de Sistema
-      </h1>
-      <InternalLink to="missao">
+          }}
+        />
+      )}
+
+      <h1>{title}</h1>
+      <InternalLink to={nextId}>
         <ScrollButtom />
       </InternalLink>
     </Container>

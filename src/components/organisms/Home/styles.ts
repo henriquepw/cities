@@ -1,9 +1,13 @@
 import Particles from 'react-particles-js';
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 
 import { rem } from 'polished';
 
-export const Container = styled.section`
+interface ContainerProps {
+  backgroundImg?: string;
+}
+
+export const Container = styled.section<ContainerProps>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,6 +17,25 @@ export const Container = styled.section`
   min-height: 100vh;
 
   background: ${({ theme }) => theme.colors.primary.gradient};
+
+  ${({ backgroundImg, theme }) =>
+    backgroundImg &&
+    css`
+      background-image: url(${backgroundImg});
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &::before {
+        content: '';
+        position: absolute;
+
+        height: 100%;
+        width: 100%;
+
+        background: ${theme.colors.primary.gradient};
+        opacity: 0.75;
+      }
+    `};
 
   h1 {
     max-width: 870px;
