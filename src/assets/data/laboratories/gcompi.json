@@ -26,6 +26,10 @@
     {
       "name": "Processamento de Informação",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et dui aliquam"
+    },
+    {
+      "name": "Projeto de Sistemas Computacionais",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et dui aliquam"
     }
   ]
 }

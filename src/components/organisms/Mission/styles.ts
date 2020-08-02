@@ -13,7 +13,7 @@ export const Container = styled(SectionContainer)`
 
   min-height: 90vh;
 
-  img {
+  svg {
     margin-right: 64px;
   }
 
@@ -35,7 +35,7 @@ export const Container = styled(SectionContainer)`
   }
 
   @media (max-width: ${({ theme }) => theme.sizes.tablet}px) {
-    img {
+    svg {
       display: none;
     }
   }

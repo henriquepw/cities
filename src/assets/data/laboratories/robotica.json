@@ -26,6 +26,10 @@
     {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et dui aliquam"
+    },
+    {
+      "name": "Lorem ipsum dolor 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et dui aliquam"
     }
   ]
 }

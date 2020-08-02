@@ -8,7 +8,7 @@ import labsData from '@assets/data/labs.json';
 
 import { Container, Laboratory } from './styles';
 
-const Labs: React.FC = () => {
+const LabsList: React.FC = () => {
   return (
     <Container id="laboratorios">
       <SectionTitle>Laboratórios</SectionTitle>
@@ -25,9 +25,7 @@ const Labs: React.FC = () => {
             <div>
               <h2>{lab.name}</h2>
               <p>{lab.description}</p>
-              <Link to={`/laboratorios/${lab.name.toLowerCase()}`}>
-                SAIBA MAIS
-              </Link>
+              <Link to={`/laboratorios/${lab.slug}`}>SAIBA MAIS</Link>
             </div>
           </Laboratory>
         ))}
@@ -36,4 +34,4 @@ const Labs: React.FC = () => {
   );
 };
 
-export default Labs;
+export default LabsList;

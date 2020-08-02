@@ -46,7 +46,7 @@ const Laboratory: React.FC<LaboratoryProps> = ({ data }) => {
       />
       <AboutUs {...data.aboutUs} />
       <OperationAreas areas={data.areas} />
-      <Professors />
+      {/* <Professors /> */}
 
       <Footer />
     </AppProvider>

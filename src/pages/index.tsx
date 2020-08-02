@@ -9,7 +9,7 @@ import Header from '@molecules/Header';
 
 import Contact from '@organisms/Contact';
 import Home from '@organisms/Home';
-import Labs from '@organisms/Labs';
+import LabsList from '@organisms/LabsList';
 import Mission from '@organisms/Mission';
 
 import AppProvider from '@templates/AppProvider';
@@ -34,7 +34,7 @@ const IndexPage: React.FC<PageProps> = () => (
       nextId="missao"
     />
     <Mission />
-    <Labs />
+    <LabsList />
     <Contact />
 
     <Footer />

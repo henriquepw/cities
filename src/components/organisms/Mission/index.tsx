@@ -1,13 +1,13 @@
 import React from 'react';
 
-import missionImg from '@assets/svgs/mission.svg';
+import MissionImg from '@assets/svgs/mission.svg';
 
 import { Container } from './styles';
 
 const Mission: React.FC = () => {
   return (
     <Container id="missao">
-      <img src={missionImg} alt="mission" />
+      <MissionImg />
       <div>
         <h1>Nossa missão</h1>
         <p>
