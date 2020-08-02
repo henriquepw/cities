@@ -31,5 +31,27 @@
       "name": "Lorem ipsum dolor 2",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et dui aliquam"
     }
+  ],
+  "professors": [
+    {
+      "name": "Name Surname",
+      "profileImg": "https://cdn.icon-icons.com/icons2/1560/PNG/512/3430602-avatar-female-pretty-profile-user-woman_107555.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor"
+    },
+    {
+      "name": "Name Surname 1",
+      "profileImg": "https://cdn.icon-icons.com/icons2/1560/PNG/512/3430602-avatar-female-pretty-profile-user-woman_107555.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor"
+    },
+    {
+      "name": "Name Surname 2",
+      "profileImg": "https://cdn.icon-icons.com/icons2/1560/PNG/512/3430602-avatar-female-pretty-profile-user-woman_107555.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor"
+    },
+    {
+      "name": "Name Surname 3",
+      "profileImg": "https://cdn.icon-icons.com/icons2/1560/PNG/512/3430602-avatar-female-pretty-profile-user-woman_107555.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor"
+    }
   ]
 }

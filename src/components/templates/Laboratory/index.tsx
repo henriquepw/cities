@@ -8,7 +8,7 @@ import Header from '@molecules/Header';
 import AboutUs, { AboutUsProps } from '@organisms/AboutUs';
 import Home from '@organisms/Home';
 import OperationAreas, { AtuationArea } from '@organisms/OperationAreas';
-import Professors from '@organisms/Professors';
+import Professors, { Professor } from '@organisms/Professors';
 
 import AppProvider from '@templates/AppProvider';
 
@@ -22,6 +22,7 @@ interface LaboratoryProps {
     backgroundImg: string;
     aboutUs: AboutUsProps;
     areas: AtuationArea[];
+    professors: Professor[];
   };
 }
 
@@ -46,7 +47,7 @@ const Laboratory: React.FC<LaboratoryProps> = ({ data }) => {
       />
       <AboutUs {...data.aboutUs} />
       <OperationAreas areas={data.areas} />
-      {/* <Professors /> */}
+      <Professors professors={data.professors} />
 
       <Footer />
     </AppProvider>
