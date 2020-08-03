@@ -53,6 +53,7 @@ export const AreaItem = styled.li<AreaListProps>`
     content: '';
     position: absolute;
     background: ${({ theme }) => theme.colors.primary.text};
+    opacity: 0.5;
   }
 
   &::before {
