@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const siteMetadata = require('./config/metadata');
+const siteMetadata = require('./src/assets/data/metadata.json');
 
 module.exports = {
   siteMetadata,

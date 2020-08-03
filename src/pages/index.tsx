@@ -30,7 +30,7 @@ const IndexPage: React.FC<PageProps> = () => (
     <Header navItems={navItems} />
 
     <Home
-      title="Centro de Inovação e Pesquisa em Tecnologias da Informação e Engenharia de Sistema"
+      title="Centro de Inovação e Pesquisa em Tecnologias da Informação e Engenharia de Sistemas"
       nextId="missao"
     />
     <Mission />
