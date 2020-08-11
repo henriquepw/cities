@@ -133,17 +133,15 @@ run `yarn start` or `npm start` command to start a local server and get a test! 
 
 2.  **`atoms`**: the basic building blocks of all matter.
 
-3.  **`context`**: all contexts used. Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+3.  **`molecules`**: groups of atoms bonded together and are the smallest fundamental units of a compound..
 
-4.  **`molecules`**: groups of atoms bonded together and are the smallest fundamental units of a compound..
+4.  **`organisms`**: groups of molecules joined together to form a relatively complex, distinct section of an interface..
 
-5.  **`organismis`**: groups of molecules joined together to form a relatively complex, distinct section of an interface..
+5.  **`pages`**: each `.tsx` file is a website page.
 
-6.  **`pages`**: each `.tsx` file is a website page.
+6.  **`styles`**: global styles.
 
-7.  **`styles`**: global styles.
-
-8.  **`templates`**: consist mostly of groups of organisms stitched together to form pages.
+7.  **`templates`**: consist mostly of groups of organisms stitched together to form pages.
 
 ## :memo: License
 
