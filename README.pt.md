@@ -9,7 +9,7 @@
 <p align="center">
   <!-- if your  -->
   <a href="https://github.com/henry-ns/cities/graphs/commit-activity" alt="Maintenance">
-    <img src="https://img.shields.io/badge/Maintained%3F-yes-1EAE72.svg" />
+    <img src="https://img.shields.io/badge/Mantendo%3F-yes-1EAE72.svg" />
   </a>
 
   <!-- if your app is a website -->
@@ -18,8 +18,8 @@
   </a>
 
   <!-- License -->
-  <a href="./LICENSE" alt="License: MIT">
-    <img src="https://img.shields.io/badge/License-MIT-1EAE72.svg" />
+  <a href="./LICENSE" alt="Licença: MIT">
+    <img src="https://img.shields.io/badge/Licença-MIT-1EAE72.svg" />
   </a>
 
   <!-- codefactor -->
@@ -45,55 +45,53 @@
 
 <!-- summary -->
 <p align="center">
-  <a href="#clipboard-description">Description</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-getting-started">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-whats-inside">What's inside?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-license">License</a>
+  <a href="#clipboard-Descriçao">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-iniciando">Iniciando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-o-que-tem-dentro">o que tem dentro</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
 </p>
 
-> under construction...
+> em construção...
 
-[🇧🇷 Leia em PT-BR aqui](./README.pt.md).
-
-## :clipboard: Description
-The Center for Innovation and Research in Information Technology and Systems Engineering ([CITIES](https://cities-ifpb.vercel.app/)) is a group of all computer science research labs in the [IFPB Campus Campina Grande](https://www.ifpb.edu.br/campinagrande).
+## :clipboard: Descrição
+O Centro de Inovação e Pesquisa em Tecnologias da Informação e Engenharia de Sistemas ([CITIES](https://cities-ifpb.vercel.app/)) é um grupo que agrega de todos os laboratórios de pesquisa em informática do [IFPB Campus Campina Grande](https://www.ifpb.edu.br/campinagrande).
 
 
-## :rocket: Getting Started
+## :rocket: Iniciando
 
-1. Download the repository
+1. Baixando o repositório
 
 ```shell
   git clone https://github.com/henry-ns/cities.git
 ```
-  > :bulb: or whichever way you prefer
+  > :bulb: usando o git é só um exemplo, você pode fazer do jeito que preferir
 
-1. Installation
+1. Instalando
 
-Inside the repo folder, run `yarn` or `npm install` command to install the dependencies.
+dentro da pasta do repositório, execute o comando `yarn` ou `npm install` instalar as dependências.
 
-2. Execution
+2. Executando
 
-run `yarn start` or `npm start` command to start a local server and get a test! :rocket:
+Rode `yarn start` ou `npm start` para iniciar um servidor local e mão na massa :rocket:
 
-> :bulb: If you use another package manager, run the reference commands for install the dependencies and execute the start script on package.json
+> :bulb: se você utilizar outro gerenciador de pacotes, rode o comando referente de instalação das dependências e execute o script "start" do package.json
 
-## 🧐 What's inside?
+## 🧐 o que tem dentro?
 
-### :building_construction: Technologies
+### :building_construction: Tecnologias
 - [Gatsby](https://www.gatsbyjs.org/)
 - [ReactJS](https://reactjs.org/)
 
 
-### :lipstick: Linter tools
+### :lipstick: Ferramentas de linter
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [EditorConfig](https://editorconfig.org/)
 
 
-### :package: Packages
+### :package: Pacotes
 
-| Function                  | Library                                                                           |
+| Funções                  | Biblioteca                                                                           |
 | ------------------------- | --------------------------------------------------------------------------------- |
 | Controle de SEO           | [React Helmet](https://github.com/nfl/react-helmet)                               |
 | CSS in JS                 | [Styled Compoments](https://www.styled-components.com/)                           |
@@ -101,22 +99,22 @@ run `yarn start` or `npm start` command to start a local server and get a test! 
 | Google Maps               | [@react-google-maps api](https://github.com/JustFly1984/react-google-maps-api)    |
 | Icones                    | [React Icons](https://react-icons.netlify.com/#/)                                 |
 | Manipulação de cores      | [Polished](https://polished.js.org/)                                              |
-| Particles                 | [React Particles.js](https://github.com/Wufe/react-particles-js)                  |
+| Particulas                 | [React Particles.js](https://github.com/Wufe/react-particles-js)                  |
 
 
 ### :card_file_box: Gatsby plugins
 
-| Function                      | Plugins                                                                                      |
+| Funções                      | Plugins                                                                                      |
 | ----------------------------- | -------------------------------------------------------------------------------------------- |
-| Integration with Vercel       | [Gatsby Plugin Zeit Now](https://www.gatsbyjs.org/packages/gatsby-plugin-zeit-now)           |
+| Integrando com Vercel       | [Gatsby Plugin Zeit Now](https://www.gatsbyjs.org/packages/gatsby-plugin-zeit-now)           |
 | Lazy loader images            | [Gatsby Image](https://www.gatsbyjs.org/packages/gatsby-image/)                              |
-| Preload the fonts             | [Gatsby Plugin Preload Fonts](https://www.gatsbyjs.org/packages/gatsby-plugin-preload-fonts) |
+| Preload fonts             | [Gatsby Plugin Preload Fonts](https://www.gatsbyjs.org/packages/gatsby-plugin-preload-fonts) |
 | PWA                           | [Gatsby Plugin Offline](https://www.gatsbyjs.org/packages/gatsby-plugin-offline/)            |
 | Sitemap                       | [Gatsby Plugin Sitemap](https://www.gatsbyjs.org/packages/gatsby-plugin-sitemap/)            |
-| Use SVG as a React Components | [Gatsby Plugin React SVG](https://www.gatsbyjs.org/packages/gatsby-plugin-react-svg/)       |
+| Usar SVGs como um component React | [Gatsby Plugin React SVG](https://www.gatsbyjs.org/packages/gatsby-plugin-react-svg/)       |
 
 
-### A quick look at the top-level directories inside the `./src`.
+### Uma rápida olhada nos diretórios dentro do `./src`.
 
     ./src
      ├── assets
@@ -129,28 +127,26 @@ run `yarn start` or `npm start` command to start a local server and get a test! 
      ├── styles
      └── templates
 
-1.  **`assets`**: all resources used. How icons, images, etc.
+1.  **`assets`**: todos os recursos usados, como por exemplo ícones, imagens, etc.
 
-2.  **`atoms`**: the basic building blocks of all matter.
+2.  **`atoms`**: os blocos básicos de construção de toda a matéria.
 
-3.  **`context`**: all contexts used. Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+3.  **`molecules`**: grupos de átomos ligados entre si.
 
-4.  **`molecules`**: groups of atoms bonded together and are the smallest fundamental units of a compound..
+4.  **`organisms`**: grupos de moléculas unidas para formar uma seção distinta e relativamente complexa de uma interface.
 
-5.  **`organismis`**: groups of molecules joined together to form a relatively complex, distinct section of an interface..
+5.  **`pages`**: cada arquivo `.tsx` é referente a uma página do site.
 
-6.  **`pages`**: each `.tsx` file is a website page.
+6.  **`styles`**: estilos globais.
 
-7.  **`styles`**: global styles.
-
-8.  **`templates`**: consist mostly of groups of organisms stitched together to form pages.
+7.  **`templates`**: consistem principalmente de grupos de organismos para formar páginas.
 
 ## :memo: License
 
-This project is under the MIT license. See the file [LICENSE](LICENSE) for more details.
+Este projeto está sobre a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
-Build with 💙 By [Henrique Miranda](https://thehenry.dev).
+Construdo com 💙 por [Henrique Miranda](https://thehenry.dev).
 
-Based on this [readme template](https://gist.github.com/henry-ns/a00234378353d9ca43e1bfe043202192).
+Baseado nesse [template de readme](https://gist.github.com/henry-ns/a00234378353d9ca43e1bfe043202192).
